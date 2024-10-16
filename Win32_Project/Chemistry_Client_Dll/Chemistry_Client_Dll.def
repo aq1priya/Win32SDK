@@ -1,0 +1,10 @@
+LIBRARY Chemistry_Client_Dll
+EXPORTS
+	InitializeCOM
+	UnInitializeCOM
+	CalculateConcentrationByMass
+	CalculateConcentrationByVolume
+	CalculateMoleFractionOfSolute
+	CalculateMoleFractionOfSolvent
+	CalculateMolarity
+	CalculateMolality

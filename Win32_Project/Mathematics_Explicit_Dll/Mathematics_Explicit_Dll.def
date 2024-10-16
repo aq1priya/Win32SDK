@@ -1,0 +1,6 @@
+LIBRARY Mathematics_Explicit_Dll
+EXPORTS
+	 AP_nthTerm
+	 AP_SumOfSeries
+	 GP_nthTerm
+	 GP_SumOfSeries

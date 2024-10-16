@@ -1,0 +1,129 @@
+#include<windows.h>
+#include"Mathematics.h"
+#include"Chemistry.h"
+#include"Physics.h"
+#include"Biology.h"
+
+MATHEMATICS DIALOG DISCARDABLE 0, 0, 750, 370
+STYLE DS_MODALFRAME | WS_CAPTION | DS_CENTER
+CAPTION "Sequence and Series"
+
+BEGIN
+AUTORADIOBUTTON "MATHEMATICS: Sequence and Series", ID_RBMATHEMATICS, 10, 5, 290, 10
+GROUPBOX "", -1, 10, 10, 295, 145, WS_TABSTOP
+CTEXT "Arithmetic Progression(AP)", -1, 50, 18, 100, 10
+CTEXT "Geometric Progression(GP)", -1, 160, 18, 130, 10
+
+LTEXT "INPUT", -1, 20, 18, 30, 10
+RTEXT "First Term(a):", -1, 20, 30, 95, 10
+EDITTEXT ID_etFIRSTTERMAP, 120, 30, 30, 10
+RTEXT "Common Difference(d):", -1, 20, 50, 95, 10
+EDITTEXT ID_etDIFFERENCE, 120, 50, 30, 10
+RTEXT "nth Term in Series to find(n):", -1, 20, 70, 95, 10
+EDITTEXT ID_etNAP, 120, 70, 30, 10
+RTEXT "First Term(a):", -1, 160, 30, 95, 10
+EDITTEXT ID_etFIRSTTERMGP, 260, 30, 30, 10
+RTEXT "Common Ratio(r):", -1, 160, 50, 95, 10
+EDITTEXT ID_etRATIO, 260, 50, 30, 10
+RTEXT "nth Term in Series to find(n):", -1, 160, 70, 95, 10
+EDITTEXT ID_etNGP, 260, 70, 30, 10
+
+LTEXT "OUTPUT", -1, 20, 88, 30, 10
+RTEXT "nth Term in Series:", -1, 20, 100, 95, 10
+EDITTEXT ID_etNTERMAP, 120, 100, 30, 10
+RTEXT "Sum of series of n terms(S):", -1, 20, 120, 95, 10
+EDITTEXT ID_etSUMAP, 120, 120, 30, 10
+RTEXT "nth Term in Series:", -1, 160, 100, 95, 10
+EDITTEXT ID_etNTERMGP, 260, 100, 30, 10
+RTEXT "Sum of series of n terms(S):", -1, 160, 120, 95, 10
+EDITTEXT ID_etSUMGP, 260, 120, 30, 10
+
+PUSHBUTTON "Clear", IDP_CLEARMATH, 175, 140, 50, 10
+PUSHBUTTON "Calculate", IDP_MATHS, 240, 140, 50, 10
+
+//chem
+AUTORADIOBUTTON "CHEMISTRY: Solution and Colligative Properties", IDR_CHEMISTRY, 315, 5, 300, 10
+GROUPBOX "", -1, 315, 10, 360, 170, WS_TABSTOP
+CTEXT"Solute", -1, 365, 18, 125, 10
+CTEXT"Solvent", -1, 530, 18, 135, 10
+
+LTEXT "INPUT", -1, 325, 18, 30, 10
+RTEXT "Mass of Solute(in gms):", -1, 355, 30, 80, 10
+EDITTEXT IDE_MASSSOLUTE, 440, 30, 50, 10
+RTEXT "Volume of Solute(in ltr):", -1, 355, 50, 80, 10
+EDITTEXT IDE_VOLUMESOLUTE, 440, 50, 50, 10
+RTEXT "Moles of Solute:", -1, 355, 70, 80, 10
+EDITTEXT IDE_MOLESSOLUTE, 440, 70, 50, 10
+RTEXT "Mass of Solvent(in gms):", -1, 500, 30, 110, 10
+EDITTEXT IDE_MASSSOLVENT, 615, 30, 50, 10
+RTEXT "Volume of Solvent(in ltr):", -1, 500, 50, 110, 10
+EDITTEXT IDE_VOLUMESOLVENT, 615, 50, 50, 10
+RTEXT "Moles of Solvent:", -1, 500, 70, 110, 10
+EDITTEXT IDE_MOLESSOLVENT, 615, 70, 50, 10
+
+LTEXT "OUTPUT", -1, 325, 88, 30, 10
+CTEXT "Concentration of Solution", -1, 365, 88, 125, 10
+RTEXT "Percentage by mass of solute:", -1, 325, 100, 110, 10
+EDITTEXT IDE_CMASS, 440, 100, 50, 10
+RTEXT "Percentage by volume of solute:", -1, 325, 120, 110, 10
+EDITTEXT IDE_CVOLUME, 440, 120, 50, 10
+CTEXT "Mole Fraction", -1, 530, 88, 135, 10
+RTEXT "Mole fraction of solute(X1):", -1, 500, 100, 110, 10
+EDITTEXT IDE_MFSOLUTE, 615, 100, 50, 10
+RTEXT "Mole fraction of solvent(X2):", -1, 500, 120, 110, 10
+EDITTEXT IDE_MFSOLVENT, 615, 120, 50, 10
+RTEXT "Molarity(M):", -1, 325, 140, 110, 10
+EDITTEXT IDE_MOLARITY, 440, 140, 50, 10
+RTEXT "Molality:", -1, 500, 140, 110, 10
+EDITTEXT IDE_MOLALITY, 615, 140, 50, 10
+
+PUSHBUTTON "Clear", IDP_CLEARCHEM, 550, 160, 50, 10
+PUSHBUTTON "Calculate", IDP_CHEMISTRY, 615, 160, 50, 10
+
+//Physics
+AUTORADIOBUTTON "PHYSICS: Satellite Launching", IDR_PHYSICS, 315, 190, 300, 10
+GROUPBOX "", -1, 315, 195, 360, 150, WS_TABSTOP
+LTEXT "Satellite Projection", -1, 450, 205, 100, 10
+RTEXT "Projection height from earth surface h(km):", -1, 380, 220, 140, 10
+EDITTEXT IDE_HEIGHT, 530, 220, 50, 10
+RTEXT "Horizontal velocity Vh(km/s):", -1, 380, 240, 140, 10
+EDITTEXT IDE_HORIZONTAL, 530, 240, 50, 10
+LTEXT "OUTPUT", -1, 330, 270, 40, 10
+RTEXT "Critical velocity Vc(km/s):", -1, 400, 270, 120, 10
+EDITTEXT IDE_CRITICAL, 530, 270, 50, 10
+EDITTEXT IDE_STATE, 365, 290, 270, 20
+
+PUSHBUTTON "Clear", IDP_CLEARPHY, 550, 325, 50, 10
+PUSHBUTTON "Calculate", IDP_PHYSICS, 615, 325, 50, 10
+
+
+
+//Biology
+AUTORADIOBUTTON "BIOLOGY: Name The Parts Of Following", IDR_BIOLOGY, 10, 165, 300, 10
+GROUPBOX "", -1, 10, 170, 295, 180
+
+AUTORADIOBUTTON "Parts Of Flower", IDR_FLOWER, 70, 180, 80, 10
+AUTORADIOBUTTON "Parts Of Amoeba", IDR_AMOEBA, 160, 180, 80, 10
+PUSHBUTTON "Check", IDP_CHECK, 240, 335, 50, 10
+PUSHBUTTON "Clear", IDP_CLEARBIO, 175, 335, 50, 10
+
+RTEXT "1. ", -1, 10, 220, 10, 10
+EDITTEXT IDE_1, 20, 220, 66, 10
+RTEXT "2. ", -1, 10, 245, 10, 10
+EDITTEXT IDE_2, 20, 245, 66, 10
+RTEXT "3. ", -1, 10, 275, 10, 10
+EDITTEXT IDE_3, 20, 275, 66, 10
+RTEXT "4. ", -1, 10, 300, 10, 10
+EDITTEXT IDE_4, 20, 300, 66, 10
+RTEXT "5. ", -1, 226, 220, 10, 10
+EDITTEXT IDE_5, 236, 220, 66, 10
+RTEXT "6. ", -1, 226, 245, 10, 10
+EDITTEXT IDE_6, 236, 245, 66, 10
+RTEXT "7. ", IDS_SEVEN, 226, 275, 10, 10
+EDITTEXT IDE_7, 236, 275, 66, 10
+RTEXT "8. ", IDS_EIGHT, 226, 300, 10, 10
+EDITTEXT IDE_8, 236, 300, 66, 10
+
+//OK CANCEL
+PUSHBUTTON "EXIT", IDCANCEL, 360, 355, 25, 10
+END

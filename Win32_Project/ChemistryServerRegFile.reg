@@ -1,0 +1,5 @@
+Windows Registry Editor Version 5.00
+[HKEY_CLASSES_ROOT\CLSID\{57CEE278-81F2-43F3-8E73-A9260BD7751E}]
+@ = "Chemistry_Server_Dll"
+[HKEY_CLASSES_ROOT\CLSID\{57CEE278-81F2-43F3-8E73-A9260BD7751E}\InprocServer32]
+@="C:\\Windows\\System32\\Chemistry_Server_Dll.dll"

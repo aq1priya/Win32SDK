@@ -1,0 +1,6 @@
+LIBRARY Physics_Client_Dll
+EXPORTS
+	InitializeCOM
+	UninitializeCOM
+	CallCriticalVelocity
+	COMErrorMessage
